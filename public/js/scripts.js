@@ -3,9 +3,15 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
-    (function($) {
+   (function($) {
     "use strict"; // Start of use strict
-  
+      var respuestasCorrectas = 0;
+      var respuestaIncorrectas = 0;
+      var respuestasNivel ={
+        nivel1: 1,
+        nivel2: 1,
+        nivel3: 1
+      }
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -54,6 +60,48 @@
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
   
+    $('#nivel1').click(function(){
+      $("#portfolioModal1").modal();
+    });
+
+    $('#nivel2').attr('disabled','disabled')
+    $('#nivel2').click(function(){
+      $("#portfolioModal2").modal();
+    }); 
+    $('#nivel3').attr('disabled','disabled')
+    $('#nivel3').click(function(){
+      $("#portfolioModal3").modal();
+    }); 
+
+    $('.respuestaCorrecta').click(function(){
+      respuestasCorrectas++;
+      $('.respuestaIncorrecta').attr('disabled')
+      $('.respuestaCorrecta').attr('disabled')
+
+      $('.respuestaCorrecta').removeClass('btn-primary')
+      $('.respuestaCorrecta').addClass('btn-secondary')
+
+      $(this).attr('disabled')
+      
+    });
+
+    $('.respuestaIncorrecta').click(function(){
+      respuestaIncorrectas++;
+    });
+    
+    $('#chequearRespuestas').click(function(){
+       //respuestaIncorrectas + respuestasCorrectas;
+      if( respuestasNivel.nivel1 == respuestasCorrectas && respuestaIncorrectas <1){
+        $('#RespuestaCorrectaModal').modal();
+      }
+      else{
+        $('#RespuestaIncorrectaModal').modal();
+      }
+
+    });
+
+
+
     // Floating label headings for the contact form
     $(function() {
       $("body").on("input propertychange", ".floating-label-form-group", function(e) {
@@ -66,4 +114,4 @@
     });
   
   })(jQuery); // End of use strict
-  
+
