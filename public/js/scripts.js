@@ -204,6 +204,15 @@
       $("#portfolioModal3").modal();
     });
 
+    $("#chequearRespuestas3").click(function(){
+
+      if( respuestasNivel.nivel3 == cantidadRespuestasCorrectas3 && cantidadRespuestaIncorrectas3 <1){
+        $('#RespuestaCorrectaModal3').modal('show');
+      }
+      else{
+        $('#RespuestaIncorrectaModal3').modal('show')
+      }
+    });
     
     $('#volverAIntentar3').click(function (){
       $('.respuestaCorrecta3').removeClass('btn-secondary')
