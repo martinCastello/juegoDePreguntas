@@ -21,6 +21,6 @@ Podemos elegir la respuesta a la pregunta del primer nivel y chequear la respues
 
 
 Instalación:
-Nuestro juego esta subido a un repositorio de git hub,  podemos bajar el juego en un .zip y descomprimirlo. En la carpeta general podemos encontrar la carpeta “public” que al entrar en ella se encontrara un archivo llamado “index”, al hacer doble click en el mismo se abrirá la web utilizando cualquier navegador. Si no, se puede descargar node y dentro de la  carpeta del proyecto hacer npm install (en la consola). Cuando tenemso todo esto se corre la app con el comando npm start. Esto es para poder compartir la app con los demas dispositivos en  la red, para esto es necesario escribir en el navegador http://<direccion ip>:3000.
+Nuestro juego esta subido a un repositorio de git hub,  podemos bajar el juego en un .zip y descomprimirlo. En la carpeta general podemos encontrar la carpeta “public” que al entrar en ella se encontrara un archivo llamado “index”, al hacer doble click en el mismo se abrirá la web utilizando cualquier navegador. Si no, se puede descargar node y dentro de la  carpeta del proyecto hacer npm install (en la consola). Cuando tenemso todo esto se corre la app con el comando npm start. Esto es para poder compartir la app con los demas dispositivos en  la red, para esto es necesario escribir en el navegador http://direccion ip:3000.
 Para sacar la ip, se puede escribir desde la consola 'ip address show'. La dirección será la que aparecerá en inet (el que es seguido de scope global)
 
