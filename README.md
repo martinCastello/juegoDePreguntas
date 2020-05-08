@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PreguntaBIO
 
-## Available Scripts
+Nuestro juego está hecho de manera web, el mismo fue hecho con Javascript y levantado con ReactJS (esto es para obviar la instalación de npm y poder correr el juego solo abriendo el html, pero si se levanta con npm start se podrá acceder de otros dispositivos conectados a la red). Se trata de un juego  preguntas y respuestas, sobre ADN, y células eucariotas, el cual tiene  tres niveles, consta de ir respondiendo de manera correcta para poder avanzar al siguiente nivel. 
+Nos encontramos con la pagina principal, en la que se observa el nombre del juego, y en la parte superior la opción de poder jugar, como también saber quiénes realizaron el trabajo.
 
-In the project directory, you can run:
+![imagen1](https://user-images.githubusercontent.com/31372437/81455641-287a0b00-9166-11ea-8439-03ecbcb74e38.jpeg)
 
-### `npm start`
+Al presionar “jugar” nos lleva a la parte de donde podremos comenzar a jugar:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![imagen2](https://user-images.githubusercontent.com/31372437/81455650-2e6fec00-9166-11ea-8336-1752f1127ba2.jpeg)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Si ponemos el cursor por cada icono nos indica los niveles disponibles y se muestra un botón que dice “jugar” para comenzar, luego de hacerlo se abre una ventana modal que muestra la primer pregunta:
+![imagen3](https://user-images.githubusercontent.com/31372437/81455652-2fa11900-9166-11ea-801c-d42bc821d1d8.jpeg)
 
-### `npm test`
+![imagen4](https://user-images.githubusercontent.com/31372437/81455660-32037300-9166-11ea-8715-200d8719cb3f.jpeg)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Podemos elegir la respuesta a la pregunta del primer nivel y chequear la respuesta, en caso de ser correcta se desbloquea el siguiente nivel, caso contrario se puede volver a intentar desbloquear el nivel.
 
-### `npm run build`
+![imagen5](https://user-images.githubusercontent.com/31372437/81455666-3465cd00-9166-11ea-9315-939ea6bf4598.jpeg)
+![imagen6](https://user-images.githubusercontent.com/31372437/81455668-362f9080-9166-11ea-8d60-62fe9fecc2e3.jpeg)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Instalación:
+Nuestro juego esta subido a un repositorio de git hub,  podemos bajar el juego en un .zip y descomprimirlo. En la carpeta general podemos encontrar la carpeta “public” que al entrar en ella se encontrara un archivo llamado “index”, al hacer doble click en el mismo se abrirá la web utilizando cualquier navegador. Si no, se puede descargar node y dentro de la  carpeta del proyecto hacer npm install (en la consola). Cuando tenemso todo esto se corre la app con el comando npm start. Esto es para poder compartir la app con los demas dispositivos en  la red, para esto es necesario escribir en el navegador http://<direccion ip>:3000.
+Para sacar la ip, se puede escribir desde la consola 'ip address show'. La dirección será la que aparecerá en inet (el que es seguido de scope global)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
