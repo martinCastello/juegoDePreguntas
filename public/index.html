@@ -13,6 +13,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     </head>
     <body id="page-top">
       <div id="root"></div>
@@ -63,7 +64,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">   
                                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
                                     Nivel 1
-                                    <button id= "nivel1" class= "row text-center" style= "background-color: #4CAF50; border: none; color: white; text-align: center; text-decoration: none; font-size: 16px;" >Jugar</button>
+                                    <button id= "nivel1" class= "row text-center inicializadorDeModal" style= "background-color: #4CAF50; border: none; color: white; text-align: center; text-decoration: none; font-size: 16px;" >Jugar</button>
                                 </h2>
 
                                 
@@ -90,7 +91,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
                                     Nivel 3
-                                    <button id= "nivelc" class= "row text-center" style= "background-color: #4CAF50; border: none; color: white; text-align: center; text-decoration: none; font-size: 16px;" >Jugar</button>
+                                    <button id= "nivel3" class= "row text-center" style= "background-color: #4CAF50; border: none; color: white; text-align: center; text-decoration: none; font-size: 16px;" >Jugar</button>
                                 </h2>
 
                             </div>
@@ -115,9 +116,14 @@
                 <div class="row">
                     
                 </div>
+                <div class ="text-center mt-4">
+                    <span>Gisele Escobar</span><br>
+                    <span>Martin Castello</span><br>
+                    <span>Mariel López</span><br>
+                </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://github.com/AJVelezRueda/Bioinfo_UNQ"><i class="fas fa-download mr-2"></i>Git</a>
+                    <a class="btn btn-xl btn-outline-light" href="https://github.com/martinCastello/juegoDePreguntas" target="_blank"><i class="fas fa-download mr-2"></i>Git</a>
                 </div>
             </div>
         </section>
@@ -156,16 +162,16 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <h3>Pregunta <span class="label label-default">New</span></h3>
+                                    <h3><span class="label label-default">Quizá te parezca una pregunta muy obvia, pero vamos a empezar por ella: ¿Cuál de estos elementos no forman parte de la molécula de ADN?</span></h3>
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary btn-lg btn-block respuestaCorrecta">Respuesta 1</button>
-                                    <button type="button" class="btn btn-primary btn-lg btn-block respuestaIncorrecta">Respuesta 2</button>
-                                    <button type="button" class="btn btn-primary btn-lg btn-block respuestaIncorrecta">Respuesta 3</button>
-                                    <button type="button" class="btn btn-primary btn-lg btn-block respuestaIncorrecta">Respuesta 4</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta1">Carbono</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaCorrecta1">Arsénico</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta1">Fósforo</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta1">Nitrógeno</button>
                                     <br>
                                     <br>
                                     <br>
-                                    <button class="btn btn-primary" id="chequearRespuestas">Chequear respuesta</button>
+                                    <button class="btn btn-primary" id="chequearRespuestas1">Chequear respuesta</button>
                                 </div>
                             </div>
                         </div>
@@ -175,39 +181,117 @@
         </div>
 
 
-        <div class="modal fade" id="RespuestaCorrectaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="RespuestaCorrectaModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                                <h4>RESPUESTA CORRECTA!!! Nivel 2 Desbloqueado</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" id="concluirNivel1">Continuar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+            <div class="modal fade" id="RespuestaIncorrectaModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                                    </button>
-                                        </div>
-                                 <div class="modal-body">
-                                    <h4>RESPUESTA CORRECTA!!!</h4>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>RESPUESTA INCORRECTA!!!</h4>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" id="volverAIntentar1" data-dismiss="modal"> Volver a intentar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+            <br>
+            <br>  
+
+        <div class="modal fade" id="RespuestaCorrectaModal2" tabindex="-100" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                    <h4>RESPUESTA CORRECTA!!! Nivel 3 Desbloqueado</h4>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" id="concluirNivel2" data-dismiss="modal">Continuar</button>
                             </div>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="RespuestaIncorrectaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="RespuestaIncorrectaModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
-                                        </button>
-                                            </div>
-                                     <div class="modal-body">
-                                        <h4>RESPUESTA INCORRECTA!!!</h4>
-                                </div>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h4>RESPUESTA INCORRECTA!!!</h4>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" id="volverAIntentar2" data-dismiss="modal"> Volver a intentar</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+
+                <div class="modal fade" id="RespuestaCorrectaModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                        <h4>RESPUESTA CORRECTA!!!</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" id="concluirNivel3" data-dismiss="modal" data-dismiss="modal">Continuar</button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="RespuestaIncorrectaModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>RESPUESTA INCORRECTA!!!</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-dark" id="volverAIntentar3" data-dismiss="modal"> Volver a intentar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
             <br>
             <br>  
-
-
 
         <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
@@ -228,10 +312,16 @@
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="https://imag.malavida.com/articulos/hector-de-preguntados.jpg" alt="" /><!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">aca iria una descrip de la categoria??</p>
-                                    
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
+                                    <h2>La base nitrogenada del adn puede ser:  <span class="label label-default"></span></h2>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta2">arginina-timina-citosina-guanina</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta2">adenina-timidina-citosina-guanosina</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaCorrecta2">adenina-timina-citosina-guanina</button>
+                                    <button type="button" class="btn btn-success btn-lg btn-block respuestaIncorrecta2">adenina-timina-citidina-guanina</button>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-primary" id="chequearRespuestas2">Chequear respuesta</button>
                                 </div>
                             </div>
                         </div>
@@ -278,6 +368,9 @@
                 </div>
             </div>
         </div>
+
+
+
 
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
